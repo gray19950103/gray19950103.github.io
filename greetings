@@ -1,6 +1,7 @@
+<!-- static file for go's vanity import path -->
 <html>
     <head>
-        <meta name="go-import" content="page.yzr.ink/greetings git github.com/gray19950103/greetings">
+        <meta name="go-import" content="page.yzr.ink/greetings git https://github.com/gray19950103/greetings">
         <meta http-equiv="refresh" content="0;URL='https://github.com/gray19950103/greetings'">
     </head>
     <body>
