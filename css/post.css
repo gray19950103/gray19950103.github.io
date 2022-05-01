@@ -1,0 +1,32 @@
+h1 {
+    font-size: 2.2em;
+    margin-block-end: 0.2em;
+}
+P.meta {
+    font-size: 0.8em;
+    background-color: lavender;
+    border-radius: 10px;
+    display: inline;
+    padding: 3px 9px;
+    /*margin-bottom: 0.67em;*/
+}
+p {
+    font-size: 1em;
+}
+table {
+    border-collapse: separate;
+}
+tbody td {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 8px;
+}
+th {
+    background-color: #ffc107;
+}
+tbody tr:nth-child(odd) {
+    background-color: #EEEEEE;
+}
+tbody tr:nth-child(even) {
+    background-color: #CCCCCC;
+}

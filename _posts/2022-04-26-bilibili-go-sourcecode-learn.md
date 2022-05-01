@@ -4,11 +4,7 @@ title: "Bilibili GO 源码学习"
 date: 2022-04-26
 ---
 
-## Bilibili GO 源码学习
-
----
-
-辗转找到bilibili的GO源码，最初泄漏地址 [github.com/openbilibili](https://github.com/openbilibili/go-common/) 已经因为违反DCMA被移除。
+辗转找到bilibili的GO源码，最初泄漏地址 [github.com/openbilibili](https://github.com/openbilibili/go-common/) 已经因为违反DMCA被移除。
 
 项目根目录下的app目录包含全部应用源码：
 
@@ -22,9 +18,7 @@ date: 2022-04-26
 | service   | 功能模块   |
 | tool      | 工具类    |
 
----
-
-### service 功能模块
+## service 功能模块
 功能模块中包含多个分类：  
 - bbq
 - ep
@@ -36,7 +30,8 @@ date: 2022-04-26
 
 每个分类中又包含多个微服务模块。
 
-#### 微服务模块 main/account
+### 微服务模块 main/account
+
 | 目录名     | 内容             |
 |---------|----------------|
 | api     | gorpc proto    |
@@ -48,35 +43,31 @@ date: 2022-04-26
 | server  | grpc http      |
 | service | 业务实现层          |
 
-##### cmd/main.go
+#### cmd/main.go
 解析命令行参数后并初始化配置文件后，
 分别启动 `rpcSvr` `wardenSvr` `httpSvr`，
 并进入无限循环获取 `os.Signal` 信道的信息，
 获得指定信号后中止应用。
 
-##### server/http/http.go
+#### server/http/http.go
 cmd/main.go中调用http.Init()后，
 根据传入配置构建`blademaster`的engine、注册路由及方法，
 最后启动engine。
 
----
-
-### job 消息队列消费模块
+## job 消息队列消费模块
 与其他模块一致，同样包含多个分类。
 
-#### 微服务模块 main/account-recovery
+### 微服务模块 main/account-recovery
 目录结构与上述微服务模块大体一致。
 
-##### service/service.go
+#### service/service.go
 http/http.go的初始化中调用service.New()后，
 根据传入配置构建service，
 同时以Goroutine的方式调用service中的全部Consumeproc方法，
 方法中无限循环获取对应`Databus`中`Message`信道的信息，
 并反序列化后调用相应方法。
 
----
-
-```
+{% highlight go %}
 import (
 	"context"
 	"sync"
@@ -114,4 +105,4 @@ func (d *Dao) Info(c context.Context, id int64) (res *v1.Info, err error) {
 	})
 	return
 }
-```
+{% endhighlight %}
