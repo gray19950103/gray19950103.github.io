@@ -5,10 +5,9 @@ h1 {
 P.meta {
     font-size: 0.8em;
     background-color: lavender;
-    border-radius: 10px;
+    border-radius: 8px;
     display: inline;
     padding: 3px 9px;
-    /*margin-bottom: 0.67em;*/
 }
 p {
     font-size: 1em;

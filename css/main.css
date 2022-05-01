@@ -32,7 +32,6 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -41,24 +40,6 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-
-/*code {*/
-/*    background-color: lightcyan;*/
-/*    color: #037272;*/
-/*    border-radius: 4px;*/
-/*    padding: 2px 4px;*/
-/*}*/
-
-/*pre.highlight {*/
-/*    border: #CCCCCC 1px solid;*/
-/*    border-radius: 3px;*/
-/*    padding: 1%;*/
-/*}*/
-
-/*pre code {*/
-/*    color: inherit;*/
-/*    background-color: transparent;*/
-/*}*/
 
 .anchorjs-link {
     color: #AAAAAA;
