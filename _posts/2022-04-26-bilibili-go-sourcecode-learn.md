@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Bilibili GO 源码学习"
+tag: "Golang"
 date: 2022-04-26
+title: "Bilibili GO 源码学习"
+desp: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla massa lorem, tempor vitae libero vitae, fringilla interdum mauris. Integer volutpat aliquam orci, non eleifend diam tempor sed. Aenean eget nulla non diam maximus porttitor eu in eros. Etiam auctor odio tempus molestie hendrerit. Proin tristique tincidunt nibh, vitae viverra sem scelerisque eget. Nam porta orci ac quam blandit, nec pellentesque erat volutpat. Phasellus turpis erat, dictum non tristique vitae, vehicula eu nisl. Duis ut quam nulla. Proin in sapien ex. Nullam porta, orci in elementum cursus, quam velit viverra elit, eu tristique turpis ex et tellus. Duis molestie arcu venenatis, cursus nisi in, malesuada metus."
 ---
 
 辗转找到bilibili的GO源码，最初泄漏地址 [github.com/openbilibili](https://github.com/openbilibili/go-common/) 已经因为违反DMCA被移除。
