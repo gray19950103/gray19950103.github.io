@@ -1,7 +1,8 @@
 ---
 layout: default
-title: posts
+title: blog
 ---
+<link rel="stylesheet" href="/css/post.css">
 <ul class="posts">
     {% for post in site.posts %}
         <li class="post-card">
@@ -15,9 +16,8 @@ title: posts
                 <a href="{{ post.url }}">
                     <h2>{{ post.title }}</h2>
                 </a>
-                <p>{{ post.desp }}</p>
+                <p class="post-desp">{{ post.desp }}</p>
             </div>
         </li>
     {% endfor %}
 </ul>
-<p><a href="/blog/atom.xml">rss</a></p>

@@ -34,45 +34,18 @@ footer {
 .container {
     margin: auto 8%;
 }
-ul.posts { 
-    margin: 40px auto;
-    padding: 0;
-}
-ul.posts li {
-    list-style: none;
-}
-li.post-card {
-    padding: 1% 0;
-    border-bottom: #333333 2px solid;
-}
-div.post-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-div.post-tag a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: inset 0 -4px #018574;
-    transition-property: box-shadow;
-    transition-duration: .2s;
-    transition-timing-function: ease-out;
-}
-div.post-tag a:hover {
-    color:#fff;
-    text-shadow: 0 0 1px #fff;
-    box-shadow:inset 0 -1em #018574;
-}
-
-div.post-meta time {
-    color: #BBBBBB;
-}
-
 .anchorjs-link {
     color: #AAAAAA;
 }
-
 .anchorjs-link:hover {
+    color: lavender;
+}
+.blurb h1 {
+    text-align: center;
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+.blurb h1:hover {
     color: lavender;
 }
