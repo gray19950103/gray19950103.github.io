@@ -1,4 +1,4 @@
-name: yzr blog
+name: yzr's
 markdown: kramdown
 kramdown:
   input: GFM
