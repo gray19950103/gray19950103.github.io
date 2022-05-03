@@ -49,3 +49,6 @@ footer {
 .blurb h1:hover {
     color: lavender;
 }
+li.uv-card a span#busuanzi_container_site_uv{
+    display: none;
+}
