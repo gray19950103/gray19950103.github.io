@@ -52,3 +52,14 @@ footer {
 li.uv-card a span#busuanzi_container_site_uv{
     display: none;
 }
+
+blockquote {
+    color: #656d76;
+    padding: 0 1.5em;
+    border-left: 0.25em solid #d0d7de;
+    margin: 0 0 16px 0;
+}
+
+blockquote p {
+    color: #656d76;
+}
