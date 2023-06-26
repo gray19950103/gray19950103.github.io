@@ -26,6 +26,7 @@ h1 {
 }
 p {
     color: #333;
+    line-height: 150%;
 }
 footer {
     border-top: 1px solid #d5d5d5;
