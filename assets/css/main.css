@@ -20,6 +20,21 @@ a {
 a:hover {
     text-decoration: underline;
 }
+a.lure {
+    color: #ff7b12;
+    text-decoration: none;
+    transition: color .4s, box-shadow .2s ease-in-out;
+}
+a.lure:hover {
+    box-shadow: inset 0 -1em #ff7b12;
+    color: #fff;
+}
+a.lure:hover span {
+    display: none;
+}
+a.lure:hover:before {
+    content: "buzzzzzzzzzzzzzzzzzzz";
+}
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
